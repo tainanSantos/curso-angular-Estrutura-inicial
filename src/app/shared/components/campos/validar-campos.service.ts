@@ -12,7 +12,6 @@ export class ValidarCamposService {
 
 
   hasErrorValidar(control: AbstractControl, errorName: string): boolean {
-    console.log(`>>>>>>>>>>>>>>> ${control}`);
     return (control.dirty || control.touched) && this.hasError(control, errorName);
   }
 
@@ -27,6 +26,6 @@ export class ValidarCamposService {
   }
 
 
-  
+
 
 }
