@@ -19,11 +19,9 @@ export class ConfigParamsService {
 
     console.log(`PESQUISA >>>>>>>>. ${config.pagina}`);
     if (config.pagina) {
-      console.log('Entrou aqui!!!!!!!!!!!!!');
       httpParams = httpParams.set('_page', config.pagina.toString());
     }
     if (config.limite) {
-      console.log('entrou aqui 2 !!!!!!!!!!!');
       httpParams = httpParams.set('_limit', config.limite.toString());
     }
 
